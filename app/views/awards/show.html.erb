@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Userid:</strong>
+  <%= @award.userid %>
+</p>
+
+<p>
+  <strong>Awardgivername:</strong>
+  <%= @award.awardGiverName %>
+</p>
+
+<p>
+  <strong>Awardlink:</strong>
+  <%= @award.awardLink %>
+</p>
+
+<p>
+  <strong>Accepted:</strong>
+  <%= @award.accepted %>
+</p>
+
+<%= link_to 'Edit', edit_award_path(@award) %> |
+<%= link_to 'Back', awards_path %>
