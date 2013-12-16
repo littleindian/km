@@ -1,13 +1,13 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  userid: 1
-  awardGiverName: MyString
-  awardLink: MyString
+  user_id: 1
+  award_giver_name: MyString
+  award_link: MyString
   accepted: 1
 
 two:
-  userid: 1
-  awardGiverName: MyString
-  awardLink: MyString
+  user_id: 1
+  award_giver_name: MyString
+  award_link: MyString
   accepted: 1

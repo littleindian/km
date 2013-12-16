@@ -3,9 +3,9 @@
 <table>
   <thead>
     <tr>
-      <th>Userid</th>
-      <th>Awardgivername</th>
-      <th>Awardlink</th>
+      <th>User id</th>
+      <th>Award Giver </th>
+      <th>Award link </th>
       <th>Accepted</th>
       <th></th>
       <th></th>
@@ -14,13 +14,13 @@
   </thead>
 
   <tbody>
-    <% @awards.each do |award| %>
+    <% current_user.awards.each  do |award| %>
       <tr>
-        <td><%= award.userid %></td>
-        <td><%= award.awardGiverName %></td>
-        <td><%= award.awardLink %></td>
+        <td><%= award.user_id %></td>
+        <td><%= award.award_giver_name %></td>
+        <td><%= award.award_link %></td>
         <td><%= award.accepted %></td>
-        <td><%= link_to 'Show', award %></td>
+        <td><%= link_to 'Show ', award %></td>
         <td><%= link_to 'Edit', edit_award_path(award) %></td>
         <td><%= link_to 'Destroy', award, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>

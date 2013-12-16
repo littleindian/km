@@ -11,12 +11,12 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131202163029) do
+ActiveRecord::Schema.define(version: 20131216004101) do
 
   create_table "awards", force: true do |t|
-    t.integer  "userid"
-    t.string   "awardGiverName"
-    t.string   "awardLink"
+    t.integer  "user_id"
+    t.string   "award_giver_name"
+    t.string   "award_link"
     t.integer  "accepted"
     t.datetime "created_at"
     t.datetime "updated_at"
