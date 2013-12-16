@@ -3,15 +3,16 @@ Karmook::Application.routes.draw do
   #match 'auth/failure', to: redirect('/')
   #match 'signout', to: 'sessions#destroy', as: 'signout'
 
+  resources :users
+  resources :awards
+  root 'users#index'
+
+  #get '/auth/:provider/callback' => 'users#create'
   get '/auth/:provider/callback' => 'sessions#create'
+  get '/index' => 'users#index'
   #get '/signin' => 'sessions#new', :as => :signin
   get '/signout' => 'sessions#destroy', :as => :signout
-  get '/auth/failure' => 'sessions#failure'
-  root 'users#show'
-  resources :awards
-
-  resources :users
-   resources :sessions
+  get '/auth/failure' => 'users#failure'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

@@ -2,18 +2,19 @@
 
 <p>
   <strong>Name:</strong>
-  <%= @user.name %>
+  <%= @current_user.name %> 
 </p>
 
 <p>
   <strong>Email:</strong>
-  <%= @user.email %>
+  <%= @current_user.email %> 
 </p>
 
 <p>
   <strong>Website:</strong>
-  <%= @user.website %>
+  <%= @current_user.website %> 
 </p>
 
-<%= link_to 'Edit', edit_user_path(@user) %> |
-<%= link_to 'Back', users_path %>
+<%= link_to "Awards", awards_path, id: "awards" %>
+<%= link_to "Sign out", signout_path, id: "sign_out" %>
+<%= link_to 'Back', users_path %> 
