@@ -42,6 +42,7 @@ group :production do
 end
 
 gem 'omniauth-facebook'
+gem 'koala'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
 

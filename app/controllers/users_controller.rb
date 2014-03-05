@@ -26,7 +26,7 @@
   def create
     #@current_user = User.from_omniauth(env["omniauth.auth"])
     #session[:user_id] = @current_user.id
-    #render :show if session[:user_id]
+    render :show if session[:user_id]
     render :index if session[:user_id] == nil
   end
 
